@@ -10,4 +10,5 @@ def main():
         total_price = total_price * 0.9
     print("Total price for {} items is ${}".format(num_item, total_price))
 
+
 main()
