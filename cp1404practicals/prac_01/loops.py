@@ -7,5 +7,9 @@ def main():
         print(t, end=' ')
     print()
 
+    for y in range(20, 0, -1):
+        print(y, end=' ')
+    print()
 
+    
 main()
