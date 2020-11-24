@@ -7,6 +7,6 @@ def main():
         total_price += float(input("Price of item: "))
     if total_price > 100:
         total_price = total_price * 0.9
-    print("Total price for 3 items is ${}".format(total_price))
+    print("Total price for {} items is ${}".format(num_item, total_price))
 
 main()
