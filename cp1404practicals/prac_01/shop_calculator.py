@@ -2,6 +2,7 @@ def main():
     num_item = int(input("Number of items: "))
     while num_item < 0:
         print("Invalid number of items!")
+        num_item = int(input("Number of items: "))
     total_price = 0
     for i in range(num_item):
         total_price += float(input("Price of item: "))
