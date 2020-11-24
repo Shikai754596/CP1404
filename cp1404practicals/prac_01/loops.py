@@ -11,5 +11,9 @@ def main():
         print(y, end=' ')
     print()
 
+    stars_num = int(input("Please enter the number of stars: "))
+    for s in range(stars_num):
+        print("*", end='')
+
     
 main()
