@@ -16,3 +16,10 @@ except ValueError:
 except ZeroDivisionError:
     print("Cannot divide by zero!")
 print("Finished.")
+
+# When will a ValueError occur?
+# When the input value is string instead of a number.
+# When will a ZeroDivisionError occur?
+# When dominator == 0.
+# Could you change the code to avoid the possibility of a ZeroDivisionError?
+# Yes
