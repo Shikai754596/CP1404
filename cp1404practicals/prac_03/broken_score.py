@@ -11,7 +11,7 @@ def main():
 
 def score_checker(scores):
     """ Return the result of different scores"""
-    if 100 < scores < 0:
+    if 100 < scores or scores < 0:
         return "Invalid score"
     if 100 < scores < 0:
         return "Invalid score"
