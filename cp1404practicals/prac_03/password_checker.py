@@ -32,6 +32,7 @@ def is_valid_password(password):
     # TODO: if length is wrong, return False
     if MAX_LENGTH < len(password) or len(password) < MIN_LENGTH:
         return False
+
     count_lower = 0
     count_upper = 0
     count_digit = 0
