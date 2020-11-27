@@ -11,11 +11,13 @@ choice = input(">>> ").upper()
 
 
 def cel_to_fah(cel):
+    """Convert celsius to fahrenheit"""
     fah = cel * 9.0 / 5 + 32
     return fah
 
 
 def fah_to_cel(fah):
+    """Convert fahrenheit to celsius"""
     cel = (fah - 32) * 5 / 9
     return cel
 
