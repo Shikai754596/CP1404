@@ -32,6 +32,7 @@ def get_data():
 
 
 def get_description(lists):
+    """This function will display subject details"""
     for i in range(len(lists)):
         print("{} is taught by {} and has {} students".format(lists[i][0], lists[i][1], lists[i][2]))
 
