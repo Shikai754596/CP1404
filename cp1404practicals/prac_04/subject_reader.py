@@ -9,6 +9,8 @@ FILENAME = "subject_data.txt"
 def main():
     data = get_data()
     print(data)
+    get_description(data)
+
 
 
 def get_data():
@@ -27,6 +29,11 @@ def get_data():
         combination_of_parts.append(parts)
     input_file.close()
     return combination_of_parts
+
+
+def get_description(lists):
+    for i in range(len(lists)):
+        print("{} is taught by {} and has {} students".format(lists[i][0], lists[i][1], lists[i][2]))
 
 
 main()
