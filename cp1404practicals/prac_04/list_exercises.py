@@ -24,5 +24,20 @@ def numbers_calculation(number_list):
     print("The largest number is {}".format(largest_number))
     print("The average of the numbers is {}".format(average_number))
 
+    name = input("Please enter your user name: ")
+    verification_result = access_verification(name)
+    print(verification_result)
+
+
+def access_verification(user):
+    """Verify if the user is granted to access"""
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
+    if user in usernames:
+        return "Access granted"
+    else:
+        return "Access denied"
+
 
 main()
