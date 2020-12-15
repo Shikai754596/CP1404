@@ -7,11 +7,10 @@ def main():
         answer = input("Is your name {}? (Y/N) ".format(name)).upper()
         while answer not in "Y N YES NO":
             answer = input("Please choose (Y/N) ".format(name)).upper()
-        if answer == "Y" or "YES":
+        if answer in "Y YES":
             email_dict[name] = email
-        elif answer == "N" or "NO":
-            print("pa")
-            name = input("Name: ")
+        elif answer in "N NO":
+            name = input("Name: ").title()
             email_dict[name] = email
         email = input("Email: ")
 
