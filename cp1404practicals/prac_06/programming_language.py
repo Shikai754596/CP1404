@@ -8,3 +8,6 @@ class ProgrammingLanguage:
 
     def is_dynamic(self):
         return self.typing == "Dynamic"
+
+    def __str__(self):
+        return "{}, {}, Reflection = {}, First appeared in {}".format(self.name, self.typing, self.reflection, self.year)
