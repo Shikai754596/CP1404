@@ -11,7 +11,7 @@ class ConvertMilesKmApp(App):
         return self.root
 
     def handle_increment(self, miles, number):
-        self.root.ids.input_number.text = miles + number
+        self.root.ids.input_number.text = str(miles + number)
 
 
 ConvertMilesKmApp().run()
