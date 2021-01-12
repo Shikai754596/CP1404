@@ -1,6 +1,6 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.button import Button
+from kivy.uix.button import Label
 from kivy.properties import StringProperty
 
 
@@ -20,7 +20,7 @@ class DynamicLabelsApp(App):
 
     def create_widgets(self):
         for name in self.name_list:
-            temp_button = Button(text=name, id=name)
+            temp_button = Label(text=name, id=name)
             self.root.ids.entries_box.add_widget(temp_button)
 
 DynamicLabelsApp().run()
