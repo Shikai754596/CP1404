@@ -13,5 +13,10 @@ class ConvertMilesKmApp(App):
     def handle_increment(self, miles, number):
         self.root.ids.input_number.text = str(miles + number)
 
+    def handle_convert(self, miles):
+        km = miles/0.62137
+        self.root.ids.output_label.text = '{:.3f}'.format(km)
+
+
 
 ConvertMilesKmApp().run()
