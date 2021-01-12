@@ -1,5 +1,6 @@
 from cp1404practicals.prac_08.taxi import Taxi
 
+
 def main():
     new_taxi = Taxi(100, "Prius 1")
     new_taxi.drive(40)
